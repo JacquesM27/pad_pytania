@@ -128,22 +128,28 @@ Gdzie:
 Zwany też rozkładem Gaussa
 Charakteryzuje się symetrycznym rozkładem wokół średniej
 Ma kształt dzwonu
+![dzwon](dzwon.png)
 ### 5. Testy statystyczne
 Test t-Studenta:
 Porównuje średnie dwóch grup
 Sprawdza istotność różnic
+![tstudent](tstudent.png)
 
 Test chi-kwadrat:
 Sprawdza zależności między zmiennymi kategorycznymi
+![chikwadrat](chikwadrat.png)
 
 Test Shapiro-Wilka:
 Sprawdza normalność rozkładu
+![wilk](wilk.png)
 
 ANOVA:
 Analiza wariancji dla wielu grup
+![anova](anova.png)
 
 Test Manna-Whitneya:
 Nieparametryczna alternatywa dla testu t-Studenta
+![mannwhitney](mannwhitney.png)
 
 ### 6. Heatmapy
 Wizualna reprezentacja danych w formie macierzy
