@@ -40,23 +40,6 @@ Dane podzielone na kategorie (np. płeć, kolory)
 
 # Techniki modelowania statystycznego
 
-## Regresja liniowa
-
-Modelowanie relacji między zmienną zależną, a niezależnymi.
-
-- Technika, która pozwala opisać zależność między zmienną zależną Y, a jedną lub wieloma zmiennymi niezależnymi (X) (np. sprzedaż na podstawie wydatków na reklamę)
-- Pozwala na przewidywanie przyszłych wartości  (np. jak zmiana temperatury wpływa na sprzedaż lodów)
-- Analizy związków - ocenia siłę i kierunek zależności między zmiennymi
-
-### Dla jakich danych?
-
-- Relacja między zmiennymi jest liniowa - zależność powinna przypominać linię prostą
-- Dane są niezależne
-- Homoskedastyczność - rozrzut błędów powinien być stały w całym zakresie zmiennych niezależnych
-- Rozkład normalny błędów
-
-### Modele:
-
 #### 1. Drzewa decyzyjne (DecisionTreeClassifier/DecisionTreeRegressor):
 - Model przypominający strukturę drzewa
 - Podejmuje decyzje poprzez sekwencję pytań "tak/nie"
@@ -78,8 +61,9 @@ Modelowanie relacji między zmienną zależną, a niezależnymi.
 - Dobry dla prostych zależności liniowych
 
 #### 4. Regresja liniowa (LinearRegression):
-- Model dla problemów regresji
+- Modelowanie relacji między zmienną zależną, a niezależnymi.
 - Znajduje liniową zależność między zmiennymi np. prognozowanie sprzedaży, przewidywanie temperatur
+- Analizy związków - ocenia siłę i kierunek zależności między zmiennymi
 - Prosty i szybki, ale zakłada liniowość
 
 ![regresje](regresje.png)
