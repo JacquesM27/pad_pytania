@@ -25,7 +25,7 @@ Dane zorganizowane w sposób chronologiczny
 - Dekompozycja - rozkład szeregu czasowego na komponenty - trend, sezonowość, reszty
     - Trend - długoterminowy kierunek zmian w danych, np. sprzedaż lodów w trakcie dekady → ignoruje krótkie wahania, ważna ogólna tendencja
     - Sezonowość - regularne, cykliczne wzorce powtarzające się w określonych interwałach, np. co rok → jest przewidywalna, może wynikać z czynników kulturowych, pogodowych czy gospodarczych
-    - Reszty - nie da się wyjaśnić przez trend ani sezonowość, np. niespodziewane spadki sprzedaży lodów z powodu jednorazowego wydarzenia → pozwala ocenić, jak dobrze model (trend + sezonowość) opisuje dane, reszty powinny przypominać szum losowy
+    - Reszty/Szum - nie da się wyjaśnić przez trend ani sezonowość, np. niespodziewane spadki sprzedaży lodów z powodu jednorazowego wydarzenia → pozwala ocenić, jak dobrze model (trend + sezonowość) opisuje dane, reszty powinny przypominać szum losowy
 
 ## Dane kategoryczne
 
@@ -147,3 +147,30 @@ Zastosowania:
 Opisuje jak bardzo dane różnią się od średniej wartości zbioru.
 - 50, 50, 50, 50 - średnia 50, wariancja 0
 - 20, 40, 60, 80 - średnia 50, wariancja duża
+
+### 8. Krzywa ROC
+Prezentuje dwie wartości (Czułość i 1-Swoistość) w zależności od prawdopodobieństwa wystąpienia zdarzenia oszacowanego przez model. Wraz ze wzrostem punktu odcięcia, czyli granicznego prawdopodobieństwa klasyfikacji pozytywnej, obydwie miary będą spadać.
+
+![roc](roc.png)
+
+### 9. Macierz pomyłek
+Pokazuje liczbę poprawnych i niepoprawnych przewidywań.
+
+![macierzpomylek](macierzpomylek.png)
+
+### 10. PCA (Principal Component Analysis)
+PCA to metoda analizy danych, która redukuje liczbę wymiarów w zbiorze danych przy jednoczesnym zachowaniu jak największej ilości informacji. 
+
+### 11. Eigenvectors
+Wskazują kierunki maksymalnej zmienności danych w przestrzeni. W analityce są kluczowe w redukcji wymiarów (np. w PCA), ponieważ reprezentują główne kierunki, wzdłuż których dane najbardziej się różnią.
+
+### 12. Eigenfaces
+Eigenfaces to zestaw cech wyodrębnionych za pomocą PCA do analizy obrazów twarzy. Każda "eigenface" to wzorzec o wysokiej zmienności w zbiorze obrazów, który pomaga w identyfikacji lub rekonstrukcji twarzy.
+
+### 13. Centralne twierdzenie graniczne
+Centralne Twierdzenie Graniczne (ang. Central Limit Theorem, CLT) mówi, że jeśli weźmiemy dużą liczbę niezależnych próbek z populacji o dowolnym rozkładzie, to średnia z tych próbek będzie zbliżona do rozkładu normalnego (gaussowskiego), niezależnie od pierwotnego rozkładu populacji.
+
+![ctg](ctg.png)
+
+### 14. Testy F
+Test F (ang. F-test) to metoda statystyczna używana do porównania dwóch wariancji lub do testowania istotności w modelach regresji. Najczęściej stosuje się go w analizie wariancji (ANOVA), aby sprawdzić, czy różnice między grupami są statystycznie istotne.
