@@ -148,10 +148,14 @@ Opisuje jak bardzo dane różnią się od średniej wartości zbioru.
 - 50, 50, 50, 50 - średnia 50, wariancja 0
 - 20, 40, 60, 80 - średnia 50, wariancja duża
 
-### 8. Krzywa ROC
-Prezentuje dwie wartości (Czułość i 1-Swoistość) w zależności od prawdopodobieństwa wystąpienia zdarzenia oszacowanego przez model. Wraz ze wzrostem punktu odcięcia, czyli granicznego prawdopodobieństwa klasyfikacji pozytywnej, obydwie miary będą spadać.
+### 8. Krzywa ROC (Receiver Operating Characteristic)
+Graficzna reprezentacja zdolności modelu klasyfikacyjnego do rozróżniania między klasami. Prezentuje dwie wartości - **Czułość** (zdolność modelu do poprawnego wykrywania przykładów pozytywnych) i **1-Swoistość** (zdolność modelu do poprawnego odrzucania przypadków negatywnych). Krzywa ROC opisuje jak zmienia się jakość klasyfikatora w zależności od zastosowanego progu decyzyjnego. Przydatna w ocenie modeli gdy klasy są niezbalansowane.<br> Obszar pod krzywą ROC (AUC - Area Under Curve)
+AUC = 1: Idealny model (perfekcyjna klasyfikacja).
+AUC = 0.5: Model losowy (brak zdolności do klasyfikacji).
+AUC < 0.5: Zły model (klasyfikuje odwrotnie).
 
 ![roc](roc.png)
+![roc](roc2.png)
 
 ### 9. Macierz pomyłek
 Pokazuje liczbę poprawnych i niepoprawnych przewidywań.
